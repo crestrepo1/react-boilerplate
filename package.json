@@ -4,6 +4,10 @@
   "description": "react boilerplate with mobx and jest/enzyme testing",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js --progress --hide-modules",
+    "lint:js": "eslint \"./client/**/*.js\" --fix",
+    "lint:css": "stylelint \"./client/**/*.css\" --fix",
     "test": "test"
   },
   "repository": {
