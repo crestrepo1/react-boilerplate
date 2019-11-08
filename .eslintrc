@@ -13,10 +13,11 @@
     },
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "jest/globals": true
     },
     "extends": ["./linters/js/index.js"],
-    "plugins": ["react"],
+    "plugins": ["react", "jest"],
     "rules": {
         "react/jsx-uses-react": 2,
         "react/jsx-uses-vars": 2,
@@ -35,6 +36,11 @@
         "react/jsx-tag-spacing": [2,{"afterOpening": "allow", "closingSlash":"never", "beforeSelfClosing":"always"}],
         "react/jsx-sort-props": [2, {"ignoreCase": true }],
         "no-fallthrough": ["error", { "commentPattern": "break[\\s\\w]*omitted" }],
-        "no-restricted-syntax": ["error", "ForInStatement"]
+        "no-restricted-syntax": ["error", "ForInStatement"],
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
     }
 }

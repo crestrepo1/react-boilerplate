@@ -7,9 +7,9 @@ const View1 = observer(() => {
     return (
         <div>
             <h2>View 2</h2>
-            <CounterView/>
+            <CounterView />
         </div>
-    )
+    );
 });
 
 export default View1;

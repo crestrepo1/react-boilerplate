@@ -6,7 +6,6 @@ const View1 = lazy(() => import('./views/View1'));
 const View2 = lazy(() => import('./views/View2'));
 
 const Routes = () => {
-
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 
     return (
@@ -25,7 +24,7 @@ const Routes = () => {
                 </Switch>
             </Suspense>
         </BrowserRouter>
-    )
-}
+    );
+};
 
 export default Routes;

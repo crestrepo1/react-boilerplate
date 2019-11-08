@@ -6,7 +6,7 @@ const View1 = observer(() => {
         <div>
             <h2>View 1</h2>
         </div>
-    )
+    );
 });
 
 export default View1;
