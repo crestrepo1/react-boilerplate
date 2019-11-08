@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent should render correctly 1`] = `
+<div
+  className="_"
+>
+  <h2>
+    0
+  </h2>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Increase
+  </button>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    Decrease
+  </button>
+</div>
+`;
