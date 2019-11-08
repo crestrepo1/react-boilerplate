@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import CounterView from './common/components/Counter';
+import Routes from './routes';
 
 
 const MOUNT_NODE = document.getElementById('app');
@@ -9,7 +9,7 @@ const MOUNT_NODE = document.getElementById('app');
 ReactDOM.render(
     <div>
         <h1>Hello World</h1>
-        <CounterView />
+        <Routes />
     </div>,
     MOUNT_NODE
 );
