@@ -3,13 +3,12 @@ const path = require('path');
 const webpack = require('webpack');
 const moment = require('moment');
 
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const WebappWebpackPlugin = require('webapp-webpack-plugin');
 
 // config files
 const baseConfig = require('./webpack.common.js');
@@ -173,12 +172,7 @@ module.exports = merge(
             ],
         },
         plugins: [
-            new CleanWebpackPlugin('build'),
-            new WebappWebpackPlugin({
-                logo: './client/common/images/favicon.png',
-                title: 'Grasshopper',
-                prefix: 'assets/img/icons/'
-            }),
+            new CleanWebpackPlugin(),
             new HtmlWebpackPlugin(configureHtml()),
             new BundleAnalyzerPlugin(
                 configureBundleAnalyzer(),

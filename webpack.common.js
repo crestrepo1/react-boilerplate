@@ -34,7 +34,7 @@ const baseConfig = {
     },
     module: {
         rules: [
-            configureBabelLoader(pkg.browserslist.legacyBrowsers),
+            configureBabelLoader(),
             configureFontLoader(),
         ]
     }
