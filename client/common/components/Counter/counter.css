@@ -1,0 +1,14 @@
+._ {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    appearance: none;
+    background: #2980B9;
+    border: 0;
+    border-radius: 5px;
+    color: #FFF;
+    margin: 10px;
+    padding: 10px;
+}
