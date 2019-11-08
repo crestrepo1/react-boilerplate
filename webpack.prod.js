@@ -19,12 +19,12 @@ const configureBanner = () => {
     return {
         banner: [
             '/*!',
-            ' * @project        ' + 'GH Connect',
+            ' * @project        ' + pkg.name,
             ' * @name           ' + '[filebase]',
             ' * @author         ' + pkg.author.name,
             ' * @build          ' + moment().format('llll') + ' ET',
             ' * @release        ' + pkg.version,
-            ' * @copyright      Copyright (c) ' + moment().format('YYYY') + ' LogMeIn',
+            ' * @copyright      Copyright (c) ' + moment().format('YYYY'),
             ' *',
             ' */',
             ''

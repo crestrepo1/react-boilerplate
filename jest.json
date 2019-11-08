@@ -1,0 +1,43 @@
+{
+    "moduleFileExtensions": [
+        "js"
+    ],
+    "moduleDirectories": [
+        "node_modules",
+        "client"
+    ],
+    "transform": {
+        "^.+\\.js$": "babel-jest"
+    },
+    "globals": {
+        "ENV": "test",
+        "VERSION": "6"
+    },
+    "snapshotSerializers": [
+        "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+        "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+        "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+        "client/**/*.js",
+        "!client/entry.js",
+        "!client/common/utils/analytics.js",
+        "!client/common/utils/errorLogging.js"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 88,
+            "functions": 88,
+            "lines": 90,
+            "statements": 90
+        }
+    },
+    "testURL": "http://signup.grasshopper.com/",
+    "verbose": false,
+    "setupFilesAfterEnv": [
+        "<rootDir>/jest.setup.js"
+    ]
+}

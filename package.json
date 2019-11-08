@@ -8,7 +8,7 @@
     "build": "webpack --config webpack.prod.js --progress --hide-modules",
     "lint:js": "eslint \"./client/**/*.js\" --fix",
     "lint:css": "stylelint \"./client/**/*.css\" --fix",
-    "test": "test"
+    "test": "jest --config \"jest.json\""
   },
   "repository": {
     "type": "git",
