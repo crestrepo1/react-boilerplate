@@ -2,6 +2,7 @@
     "plugins": [
         "@babel/plugin-syntax-dynamic-import",
         "@babel/plugin-transform-modules-commonjs",
+        "@babel/plugin-transform-async-to-generator",
         ["@babel/plugin-proposal-decorators", { "legacy": true}],
         ["@babel/plugin-proposal-class-properties", { "loose": true}]
     ],
@@ -11,11 +12,13 @@
             {
                 "modules": false,
                 "useBuiltIns": "entry",
+                "corejs": 3,
                 "targets": {
                     "browsers": [
                         "> 0.5%",
                         "last 3 versions"
-                    ]
+                    ],
+                    "node": "current"
                 }
             }
         ],

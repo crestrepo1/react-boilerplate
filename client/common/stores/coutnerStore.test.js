@@ -1,7 +1,7 @@
 import { CounterStore } from './CounterStore.js';
 
 describe('Counter Store', () => {
-    it('sets up store', () => {
+    it('sets up counter store', () => {
         const Store = new CounterStore();
         expect(Store.count).toBe(0);
     });

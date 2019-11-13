@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Counter from './index.js';
+import UsersView from './index.js';
 
-describe('User View Component', () => {
+describe('UserView component', () => {
     it('should render correctly', () => {
-        const component = shallow(<Counter />);
+        const component = shallow(<UsersView />);
         expect(component).toMatchSnapshot();
     });
 });

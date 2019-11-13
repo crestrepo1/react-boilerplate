@@ -73,24 +73,6 @@ const configureDevServer = () => {
                 target: 'http://localhost:8090',
                 secure: false,
                 changeOrigin: true
-            },
-            {
-                path: '/token',
-                target: 'http://localhost:8090',
-                secure: false,
-                changeOrigin: true
-            },
-            {
-                path: '/users',
-                target: 'http://localhost:8090',
-                secure: false,
-                changeOrigin: true
-            },
-            {
-                path: '/util',
-                target: 'http://localhost:8090',
-                secure: false,
-                changeOrigin: true
             }
         ],
     }

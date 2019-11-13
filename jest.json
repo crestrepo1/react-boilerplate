@@ -23,9 +23,7 @@
     "collectCoverage": false,
     "collectCoverageFrom": [
         "client/**/*.js",
-        "!client/entry.js",
-        "!client/common/utils/analytics.js",
-        "!client/common/utils/errorLogging.js"
+        "!client/entry.js"
     ],
     "coverageThreshold": {
         "global": {
@@ -35,7 +33,6 @@
             "statements": 90
         }
     },
-    "testURL": "http://signup.grasshopper.com/",
     "verbose": false,
     "setupFilesAfterEnv": [
         "<rootDir>/jest.setup.js"

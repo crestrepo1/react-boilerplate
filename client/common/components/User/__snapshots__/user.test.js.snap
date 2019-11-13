@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserView component should render correctly 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    fetch User
+  </button>
+</div>
+`;
